@@ -4,7 +4,7 @@ VScodeでLuaLaTeXを使うときの環境構築セット．
 
 ---
 
-## example
+## graduate_temp
 
 卒論用テンプレート．環境構築については
 [この記事](https://qiita.com/passive-radio/items/623c9a35e86b6666b89e)と
