@@ -1,0 +1,85 @@
+\documentclass[lualatex, report]{jlreq}
+% ----------プリアンブルここから----------
+
+\input{usepackage}
+\input{title}
+
+% 目次ページでページスタイルを無効化しないための呪文
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{myReport}}}
+
+% ----------プリアンブルここまで----------
+
+\begin{document}
+
+\pagestyle{myReport}
+\mathtoolsset{showonlyrefs=true}  % \eqref{}で参照された数式のみに番号を振る
+\maketitle
+
+\newpage
+\input{abstract}
+
+\newpage
+\tableofcontents
+
+% ----------本文ここから----------
+
+\newpage
+\setcounter{page}{1}        % 改めてここが1ページ目
+\ModifyPageStyle{myReport}{ % ページスタイルを一部変更
+  nombre                = \arabic{page},
+  running_head_position = top-left,
+  odd_running_head      = _section,
+}
+\pagestyle{myReport}
+
+\chapter{序論}
+\input{chap1}
+
+% ----------hoge----------
+
+\newpage
+\chapter{章タイトル}[サブタイトルも設定可能]
+\section{節タイトル}[サブタイトルも設定可能]
+\input{chap2_1}
+\section{式や画像やソースコードを貼る}
+\input{chap2_2}
+
+% ----------hoge----------
+
+\chapter{結論}
+
+結論を書く．\par
+\textbf{結論を書く．}\par
+\textit{結論を書く．}\par
+\textit{\textbf{結論を書く．}}\\
+
+斜体は自分で設定しよう．
+
+% ----------本文ここまで----------
+% ----------参考文献ここから----------
+
+\newpage
+\ModifyPageStyle{myReport}{
+  nombre                = \arabic{page},
+  running_head_position = top-left,
+  odd_running_head      = ,
+}
+\pagestyle{myReport}
+
+\addcontentsline{toc}{chapter}{参考文献}
+\renewcommand\refname{\huge{参考文献}}
+\defbibheading{bunken}[\refname]{\section*{#1}}
+\printbibliography[heading=bunken]
+
+% ----------参考文献ここまで----------
+
+% ----------謝辞ここから----------
+
+\newpage
+\addcontentsline{toc}{chapter}{謝辞}
+\chapter*{謝辞}
+\input{acknowledgement}
+
+% ----------謝辞ここまで----------
+
+\end{document}

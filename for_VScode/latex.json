@@ -1,0 +1,102 @@
+{
+	"gazou": {
+		"prefix": "@gazou",
+		"body": [
+			"\\begin{figure}[H]",
+			"\\begin{center}",
+				"\\includegraphics[keepaspectratio=true, scale=0.5]{test.png}",
+			"\\end{center}",
+			"\\caption{カラーコードは039393}",
+			"\\label{fig:test.png}",
+			"\\end{figure}\\vspace{2\\zh}",
+		]
+		description: "画像貼り付け"
+	},
+
+	"equation": {
+		"prefix": "@equation",
+		"body": [
+			"\\begin{equation}",
+			"",
+			"\\end{equation}",
+		]
+		description: "一行の式"
+	},
+
+	"align": {
+		"prefix": "@align",
+		"body": [
+			"\\begin{align}",
+			"",
+			"\\end{align}",
+		]
+		description: "複数行の式"
+	},
+
+	"kugiri":{
+		"prefix": "@kugiri",
+		"body": [
+			"% ----------hoge----------"
+		]
+		description: "区切り線"
+	},
+
+	"code": {
+        "prefix": "@code",
+        "body": [
+            "\\lstset{language = {C}} % 言語をその都度指定",
+            "\\lstinputlisting[",
+            "  caption = キャプション",
+            "  label = program1",
+            "]{test.c}",
+        ]
+        description: "ソースコードの貼り付け"
+    },
+
+    "report": {
+        "prefix": "@report",
+        "body": [
+            "\\documentclass[lualatex, report]{jlreq}",
+            "",
+            "\\input{usepackage}",
+            "\\input{title}",
+            "",
+            "% -------------------------------------",
+            "% ----------プリアンブルここまで----------",
+            "% -------------------------------------",
+            "",
+            "% 目次ページでページスタイルを無効化しないための呪文",
+            "\\AtBeginDocument{\\addtocontents{toc}{\\protect\\thispagestyle{myReport}}}",
+            "\\begin{document}",
+            "",
+            "\\pagestyle{myReport}",
+            "\\mathtoolsset{showonlyrefs=true}  % \\eqref{}で参照された数式のみに番号を振る",
+            "\\maketitle",
+            "",
+            "\\newpage",
+            "\\input{abstract}",
+            "",
+            "\\newpage",
+            "\\tableofcontents",
+            "",
+            "% ----------hoge----------",
+            "",
+            "\\newpage",
+            "\\setcounter{page}{1}",
+            "\\ModifyPageStyle{myReport}{",
+            "  nombre\t\t\t\t= \\arabic{page},",
+            "  running_head_position = top-left,",
+            "  odd_running_head\t  = _section,",
+            "}",
+            "\\pagestyle{myReport}",
+            "",
+            "\\chapter{序論}",
+            "\\input{chap1}",
+            "",
+            "% ----------hoge----------",
+            "",
+            ""
+        ],
+        description: "表紙ありレポートのひな型"
+    },
+}
