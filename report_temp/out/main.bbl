@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Sehra:2007pz}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8e626e47d8acfb7c65eae0ae66ccae77}{%
+           family={Sehra},
+           familyi={S\bibinitperiod},
+           given={Avtar\bibnamedelima Singh},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \strng{fullhash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \strng{bibnamehash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \strng{authorbibnamehash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \strng{authornamehash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \strng{authorfullhash}{8e626e47d8acfb7c65eae0ae66ccae77}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-lat}
+      \field{eprinttype}{arXiv}
+      \field{title}{Finite element analysis of the Schrodinger equation}
+      \field{year}{2007}
+      \verb{eprint}
+      \verb 0704.3240
+      \endverb
+    \endentry
+    \entry{小柴90}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4df2b14e02613fe5303fe41d46b43bc0}{%
+           family={小柴正則},
+           familyi={小\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {森北出版}%
+      }
+      \strng{namehash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \strng{fullhash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \strng{bibnamehash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \strng{authorbibnamehash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \strng{authornamehash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \strng{authorfullhash}{4df2b14e02613fe5303fe41d46b43bc0}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{光・波動のための有限要素法の基礎}
+      \field{year}{1990}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,55 @@
+
+\subsection{式や画像の挿入}
+
+以下に，依存しない一次元のシュレディンガー方程式を示す.\\
+\begin{equation} \label{eq:shrdg}
+  - \frac{\hbar^2 }{{2m}}\frac{{{d^2}\psi }}{{d{x^2}}} + V(x)\psi  = E\psi
+\end{equation}\\
+
+井戸の内側ではポテンシャルがゼロであることから式\eqref{eq:shrdg}に対して
+\begin{align} \label{eq:poten0}
+  V(x)      &= 0\,\,\,(0 < x < L) \\
+  \psi(0)   &= \psi (L) = 0
+\end{align}
+が課される．\\
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[keepaspectratio=true, scale=0.5]{test.png}
+  \caption{シチューではないものの例．}
+  \label{fig:test}
+\end{figure}
+
+
+
+\subsection{ソースコードの挿入}
+
+図\ref{fig:test}はシチューではない．\\
+
+\subsubsection{ソースコードを直接貼る}
+
+ここは本文です．\\
+
+\lstset{language = {C}}
+\begin{lstlisting}[caption = 大きな人参．, label = code01]
+  #include <stdio.h>
+
+  int main(void)
+  {
+  printf("Hello, world!\n");  // こんにちは世界
+  return 0;
+  }
+\end{lstlisting}
+
+\subsubsection{別ファイルから貼る}
+
+このtexファイルと同じディレクトリにソースファイルを入れておく．\\
+
+\lstset{language = {Python}}
+\lstinputlisting[
+  caption = 溶けたじゃがいも．, label = code02
+]{test.py}
+
+% こーひーすていん
+\coffeestainA{0.9}{0.85}{-25}{5cm}{1.3cm}
+
