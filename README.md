@@ -4,6 +4,13 @@ VScodeでLuaLaTeXを使うときの環境構築セット．
 
 ---
 
+## for_VScode
+
+VScode用の設定ファイルたち．
+latexmkrcファイルをHOMEディレクトリに置くとき，Windowsの環境変数%HOMEPATH%が未設定であることを必ず確認すること．
+
+---
+
 ## report_temp
 
 学位論文用テンプレート．環境構築については
@@ -12,8 +19,3 @@ VScodeでLuaLaTeXを使うときの環境構築セット．
 を順に読めば半日ほどでうまくいくはず．
 
 ---
-
-## for_VScode
-
-VScode用の設定ファイルたち．
-latexmkrcファイルをHOMEディレクトリに置くとき，Windowsの環境変数%HOMEPATH%が未設定であることを必ず確認すること．
