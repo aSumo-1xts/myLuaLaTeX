@@ -18,21 +18,24 @@
   \setmonojfont{PlemolJP}
   % 指定フォントが{Times New Roman} {MS Mincho} {MS Gothic} 等の可能性あり
 
-\usepackage{mathtools, autobreak, amssymb}      % 数式
-\usepackage[margin=25truemm]{geometry}          % 余白
-\usepackage{comment, emoji, xurl}               % コメント，絵文字, URL
-\usepackage{titling, tocloft, appendix}         % タイトル，目次，付録
+\usepackage{longtable, colortab, colortbl, arydshln}  % 表とその点線
+\usepackage{mathtools, breqn, amssymb}            % 数式
+\usepackage[margin=25truemm]{geometry}            % 余白
+\usepackage{comment, emoji, xurl}                 % コメント，絵文字, URL
+\usepackage{titling, tocloft, appendix}           % タイトル，目次，付録
 \renewcommand{\cftchapnumwidth}{40pt}             % 目次の被り回避
-\renewcommand{\cfttoctitlefont}{\huge\bfseries}   % "目次"の文字サイズ調整
-                        
+\renewcommand{\cfttoctitlefont}{\huge\bfseries}   % "目次"の文字サイズ調整                      
 
 \usepackage{graphicx, here}                       % 画像，貼る場所
 \usepackage[dvipsnames]{xcolor}                   % 色
+  \definecolor{none}{rgb}{1,1,1}
 \usepackage{tikz}                                 % 描画
   \usetikzlibrary{intersections, calc, arrows.meta}
 
 \usepackage{ifthen}                               % 条件分岐と反復処理
 \usepackage{coffeestains, scsnowman, randomwalk}  % おまけ
+
+\usepackage{pdfpages}                             % PDFの結合
 
 \usepackage{listings}                             % ソースコードの挿入
   \lstset{
@@ -88,10 +91,14 @@
 % ----------hoge----------
 
 \usepackage[
-  style   = numeric-verb,
-  sorting = none,
-  url     = false,
-  isbn    = false,
+  style       = numeric-comp,
+  sorting     = none,
+  sortcites   = true,
+  url         = false,
+  isbn        = false,
+  backref     = false,
+  date        = year,
+  giveninits  = true,
 ]{biblatex}
 
 % DOIの頭のhttp:// を除去
