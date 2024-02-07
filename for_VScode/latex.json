@@ -100,11 +100,11 @@
         description: "表紙ありレポートのひな型"
     },
 
-	"coffee": {
-        	"prefix": "@coffee",
-        	"body": [
-            	"\\coffeestainA{0.8}{0.8}{-15}{5cm}{1.3cm}"
-        	],
-        	description: "コーヒーカップのシミ"
-    	},
+    "coffee": {
+        "prefix": "@coffee",
+        "body": [
+            "\\coffeestainA{0.8}{0.8}{-15}{5cm}{1.3cm}"
+        ],
+        description: "コーヒーカップのシミ"
+    },
 }
