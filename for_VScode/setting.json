@@ -1,11 +1,11 @@
 {
 
-// “ú–{Œê•¶‘‚Å’PŒêˆÚ“®‚ðŽg‚¤‚½‚ßA•ŽŒ‚â“Ç“_AŠ‡ŒÊ‚ð‹æØ‚è•¶Žš‚Æ‚µ‚ÄŽw’è‚·‚é
-"editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?@ABuvyzwxijIH‚Ä‚É‚ð‚Í‚ª‚Ì‚Æ‚à‚Ö‚Å‚â",
+// æ—¥æœ¬èªžæ–‡æ›¸ã§å˜èªžç§»å‹•ã‚’ä½¿ã†ãŸã‚ã€åŠ©è©žã‚„èª­ç‚¹ã€æ‹¬å¼§ã‚’åŒºåˆ‡ã‚Šæ–‡å­—ã¨ã—ã¦æŒ‡å®šã™ã‚‹
+"editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?ã€€ã€ã€‚ã€Œã€ã€ã€‘ã€Žã€ï¼ˆï¼‰ï¼ï¼Ÿã¦ã«ã‚’ã¯ãŒã®ã¨ã‚‚ã¸ã§ã‚„",
 
-// latex-workshop.latex.tools: Tool ‚Ì’è‹`
+// latex-workshop.latex.tools: Tool ã®å®šç¾©
 "latex-workshop.latex.tools": [
-    // latexmk ‚ð—˜—p‚µ‚½ lualatex ‚É‚æ‚éƒrƒ‹ƒhƒRƒ}ƒ“ƒh
+    // latexmk ã‚’åˆ©ç”¨ã—ãŸ lualatex ã«ã‚ˆã‚‹ãƒ“ãƒ«ãƒ‰ã‚³ãƒžãƒ³ãƒ‰
     {
       "name": "Latexmk (LuaLaTeX)",
       "command": "latexmk",
@@ -13,8 +13,8 @@
         "-f", "-gg",  "-lualatex",  "-synctex=1","-interaction=nonstopmode", "-file-line-error",  "%DOC%",  "-outdir=out"
       ]
     },
-    // latexmk ‚ð—˜—p‚µ‚½ platex ‚É‚æ‚éƒrƒ‹ƒhƒRƒ}ƒ“ƒh
-    // ŒÃ‚¢ LaTeX ‚Ìƒeƒ“ƒvƒŒ[ƒg‚ðŽg‚¢‚Ü‚í‚µ‚Ä‚¢‚é (ƒhƒLƒ…ƒƒ“ƒgƒNƒ‰ƒX‚ª jreport ‚â jsreport ) ê‡‚Ì‚½‚ß
+    // latexmk ã‚’åˆ©ç”¨ã—ãŸ platex ã«ã‚ˆã‚‹ãƒ“ãƒ«ãƒ‰ã‚³ãƒžãƒ³ãƒ‰
+    // å¤ã„ LaTeX ã®ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’ä½¿ã„ã¾ã‚ã—ã¦ã„ã‚‹ (ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚¯ãƒ©ã‚¹ãŒ jreport ã‚„ jsreport ) å ´åˆã®ãŸã‚
     {
       "name": "Latexmk (pLaTeX)",
       "command": "latexmk",
@@ -23,7 +23,7 @@
         "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%",  "-outdir=out"
       ]
     },
-    // latexmk ‚ð—˜—p‚µ‚½ uplatex ‚É‚æ‚éƒrƒ‹ƒhƒRƒ}ƒ“ƒh
+    // latexmk ã‚’åˆ©ç”¨ã—ãŸ uplatex ã«ã‚ˆã‚‹ãƒ“ãƒ«ãƒ‰ã‚³ãƒžãƒ³ãƒ‰
     {
       "name": "Latexmk (upLaTeX)",
       "command": "latexmk",
@@ -31,7 +31,7 @@
         "-f", "-gg",  "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%",  "-outdir=out"
       ]
     },
-    // latexmk ‚ð—˜—p‚µ‚½ xelatex ‚É‚æ‚éƒrƒ‹ƒhƒRƒ}ƒ“ƒh
+    // latexmk ã‚’åˆ©ç”¨ã—ãŸ xelatex ã«ã‚ˆã‚‹ãƒ“ãƒ«ãƒ‰ã‚³ãƒžãƒ³ãƒ‰
     {
       "name": "Latexmk (XeLaTeX)",
       "command": "latexmk",
@@ -41,94 +41,92 @@
     },
 ],
 
-// latex-workshop.latex.recipes: Recipe ‚Ì’è‹`
+// latex-workshop.latex.recipes: Recipe ã®å®šç¾©
 "latex-workshop.latex.recipes": [
-    // LuaLaTeX ‚Å‘‚©‚ê‚½•¶‘‚Ìƒrƒ‹ƒhƒŒƒVƒs
+    // LuaLaTeX ã§æ›¸ã‹ã‚ŒãŸæ–‡æ›¸ã®ãƒ“ãƒ«ãƒ‰ãƒ¬ã‚·ãƒ”
     {
       "name": "LuaLaTeX",
       "tools": ["Latexmk (LuaLaTeX)"]
     },
-    // LaTeX(pLaTeX) ‚Å‘‚©‚ê‚½•¶‘‚Ìƒrƒ‹ƒhƒŒƒVƒs
+    // LaTeX(pLaTeX) ã§æ›¸ã‹ã‚ŒãŸæ–‡æ›¸ã®ãƒ“ãƒ«ãƒ‰ãƒ¬ã‚·ãƒ”
     {
       "name": "pLaTeX",
       "tools": ["Latexmk (pLaTeX)"]
     },
-    // LaTeX(upLaTeX) ‚Å‘‚©‚ê‚½•¶‘‚Ìƒrƒ‹ƒhƒŒƒVƒs
+    // LaTeX(upLaTeX) ã§æ›¸ã‹ã‚ŒãŸæ–‡æ›¸ã®ãƒ“ãƒ«ãƒ‰ãƒ¬ã‚·ãƒ”
     {
       "name": "upLaTeX",
       "tools": ["Latexmk (upLaTeX)"]
     },
-    // XeLaTeX ‚Å‘‚©‚ê‚½•¶‘‚Ìƒrƒ‹ƒhƒŒƒVƒs
+    // XeLaTeX ã§æ›¸ã‹ã‚ŒãŸæ–‡æ›¸ã®ãƒ“ãƒ«ãƒ‰ãƒ¬ã‚·ãƒ”
     {
       "name": "XeLaTeX",
       "tools": ["Latexmk (XeLaTeX)"]
     },
 ],
 
-// latex-workshop.latex.magic.args: ƒ}ƒWƒbƒNƒRƒƒ“ƒg•t‚«‚Ì LaTeX ƒhƒLƒ…ƒƒ“ƒg‚ðƒrƒ‹ƒh‚·‚éÝ’è
-// '%!TEX' ‚ÅŽn‚Ü‚és‚Íƒ}ƒWƒbƒNƒRƒƒ“ƒg‚ÆŒÄ‚Î‚êALaTeX ‚Ìƒrƒ‹ƒhŽž‚Éƒrƒ‹ƒhƒvƒƒOƒ‰ƒ€‚É‰ðŽß‚³‚êA
-// ƒvƒƒOƒ‰ƒ€‚Ì‹““®‚ð§Œä‚·‚éŽ–‚ª‚Å‚«‚éB
-// ŽQlƒŠƒ“ƒN: https://blog.miz-ar.info/2016/11/magic-comments-in-tex/
+// latex-workshop.latex.magic.args: ãƒžã‚¸ãƒƒã‚¯ã‚³ãƒ¡ãƒ³ãƒˆä»˜ãã® LaTeX ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ãƒ“ãƒ«ãƒ‰ã™ã‚‹è¨­å®š
+// '%!TEX' ã§å§‹ã¾ã‚‹è¡Œã¯ãƒžã‚¸ãƒƒã‚¯ã‚³ãƒ¡ãƒ³ãƒˆã¨å‘¼ã°ã‚Œã€LaTeX ã®ãƒ“ãƒ«ãƒ‰æ™‚ã«ãƒ“ãƒ«ãƒ‰ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã«è§£é‡ˆã•ã‚Œã€
+// ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®æŒ™å‹•ã‚’åˆ¶å¾¡ã™ã‚‹äº‹ãŒã§ãã‚‹ã€‚
+// å‚è€ƒãƒªãƒ³ã‚¯: https://blog.miz-ar.info/2016/11/magic-comments-in-tex/
 "latex-workshop.latex.magic.args": [
   "-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
 ],
 
-// latex-workshop.latex.clean.fileTypes: ƒNƒŠ[ƒ“ƒAƒbƒvŽž‚Éíœ‚³‚ê‚éƒtƒ@ƒCƒ‹‚ÌŠg’£Žq
-// LaTeX •¶‘‚Íƒrƒ‹ƒhŽž‚ÉˆêŽžƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä‚¢‚­‚Â‚©‚Ìƒtƒ@ƒCƒ‹‚ð¶¬‚·‚é‚ªAÅI“I‚É•K—v‚Æ‚È‚é‚Ì‚Í
-// PDF ƒtƒ@ƒCƒ‹‚Ì‚Ý‚Å‚ ‚éê‡‚È‚Ç‚ª‘½‚¢B‚Ü‚½ALaTeX ‚Ìƒrƒ‹ƒhŽž‚ÉŽ¸”s‚µ‚½ê‡AŽ¸”sŽž‚É¶¬‚³‚ê‚½
-// ˆêŽžƒtƒ@ƒCƒ‹‚Ì‰e‹¿‚ÅAC³Œã‚Ìƒrƒ‹ƒh‚ÉŽ¸”s‚µ‚Ä‚µ‚Ü‚¤Ž–‚ª‚æ‚­‚ ‚éB‚»‚Ì‚½‚ßAˆêŽž“I‚Èƒtƒ@ƒCƒ‹‚ð
-// íœ‚·‚é‹@”\ (ƒNƒŠ[ƒ“ƒAƒbƒv) ‚ª LaTeX Workshop ‚É‚Í”õ‚í‚Á‚Ä‚¢‚éB
+// latex-workshop.latex.clean.fileTypes: ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—æ™‚ã«å‰Šé™¤ã•ã‚Œã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ‹¡å¼µå­
+// LaTeX æ–‡æ›¸ã¯ãƒ“ãƒ«ãƒ‰æ™‚ã«ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«ã¨ã—ã¦ã„ãã¤ã‹ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã™ã‚‹ãŒã€æœ€çµ‚çš„ã«å¿…è¦ã¨ãªã‚‹ã®ã¯
+// PDF ãƒ•ã‚¡ã‚¤ãƒ«ã®ã¿ã§ã‚ã‚‹å ´åˆãªã©ãŒå¤šã„ã€‚ã¾ãŸã€LaTeX ã®ãƒ“ãƒ«ãƒ‰æ™‚ã«å¤±æ•—ã—ãŸå ´åˆã€å¤±æ•—æ™‚ã«ç”Ÿæˆã•ã‚ŒãŸ
+// ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«ã®å½±éŸ¿ã§ã€ä¿®æ­£å¾Œã®ãƒ“ãƒ«ãƒ‰ã«å¤±æ•—ã—ã¦ã—ã¾ã†äº‹ãŒã‚ˆãã‚ã‚‹ã€‚ãã®ãŸã‚ã€ä¸€æ™‚çš„ãªãƒ•ã‚¡ã‚¤ãƒ«ã‚’
+// å‰Šé™¤ã™ã‚‹æ©Ÿèƒ½ (ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—) ãŒ LaTeX Workshop ã«ã¯å‚™ã‚ã£ã¦ã„ã‚‹ã€‚
 "latex-workshop.latex.clean.fileTypes": [
     "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
     // for Beamer files
     "_minted*", "*.nav", "*.snm", "*.vrb",
 ],
 
-// latex-workshop.latex.autoClean.run: ƒrƒ‹ƒhŽ¸”sŽž‚ÉˆêŽžƒtƒ@ƒCƒ‹‚ÌƒNƒŠ[ƒ“ƒAƒbƒv‚ðs‚¤‚©‚Ç‚¤‚©
-// ã‹Là–¾‚É‚à‚ ‚Á‚½‚æ‚¤‚ÉAƒrƒ‹ƒhŽ¸”sŽž‚É¶¬‚³‚ê‚½ˆêŽžƒtƒ@ƒCƒ‹‚ªˆ«‰e‹¿‚ð‹y‚Ú‚·Ž–‚ª‚ ‚é‚½‚ßAŽ©“®‚Å
-// ƒNƒŠ[ƒ“ƒAƒbƒv‚ª‚©‚©‚é‚æ‚¤‚É‚µ‚Ä‚¨‚­B
+// latex-workshop.latex.autoClean.run: ãƒ“ãƒ«ãƒ‰å¤±æ•—æ™‚ã«ä¸€æ™‚ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—ã‚’è¡Œã†ã‹ã©ã†ã‹
 
-"latex-workshop.latex.autoClean.run": "onBuilt",
+"latex-workshop.latex.autoClean.run": "onFailed",
 
-// latex-workshop.view.pdf.viewer: PDF ƒrƒ…[ƒA‚ÌŠJ‚«•û
-// VSCode Ž©‘Ì‚É‚Í PDF ƒtƒ@ƒCƒ‹‚ð‰{——‚·‚é‹@”\‚ª”õ‚í‚Á‚Ä‚¢‚È‚¢‚ªA
-// LaTeX Workshop ‚É‚Í‚»‚Ì‹@”\‚ª”õ‚í‚Á‚Ä‚¢‚éB
-// "tab" ƒIƒvƒVƒ‡ƒ“‚ðŽw’è‚·‚é‚ÆA¡ŠJ‚¢‚Ä‚¢‚éƒGƒfƒBƒ^‚ð¶‰E‚É•ªŠ„‚µA‰E‘¤‚É¶¬‚³‚ê‚½PDF‚ð•\Ž¦‚·‚é‚æ‚¤‚É‚µ‚Ä‚­‚ê‚é
-// ‚±‚Ì PDF ƒrƒ…ƒA[‚Í LaTeX ‚Ìƒrƒ‹ƒh‚É‚æ‚Á‚ÄXV‚³‚ê‚é‚Æ“¯Šú‚µ‚Ä“à—e‚ðXV‚µ‚Ä‚­‚ê‚éB
+// latex-workshop.view.pdf.viewer: PDF ãƒ“ãƒ¥ãƒ¼ã‚¢ã®é–‹ãæ–¹
+// VSCode è‡ªä½“ã«ã¯ PDF ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–²è¦§ã™ã‚‹æ©Ÿèƒ½ãŒå‚™ã‚ã£ã¦ã„ãªã„ãŒã€
+// LaTeX Workshop ã«ã¯ãã®æ©Ÿèƒ½ãŒå‚™ã‚ã£ã¦ã„ã‚‹ã€‚
+// "tab" ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ä»Šé–‹ã„ã¦ã„ã‚‹ã‚¨ãƒ‡ã‚£ã‚¿ã‚’å·¦å³ã«åˆ†å‰²ã—ã€å³å´ã«ç”Ÿæˆã•ã‚ŒãŸPDFã‚’è¡¨ç¤ºã™ã‚‹ã‚ˆã†ã«ã—ã¦ãã‚Œã‚‹
+// ã“ã® PDF ãƒ“ãƒ¥ã‚¢ãƒ¼ã¯ LaTeX ã®ãƒ“ãƒ«ãƒ‰ã«ã‚ˆã£ã¦æ›´æ–°ã•ã‚Œã‚‹ã¨åŒæœŸã—ã¦å†…å®¹ã‚’æ›´æ–°ã—ã¦ãã‚Œã‚‹ã€‚
 "latex-workshop.view.pdf.viewer": "tab",
 
-// latex-workshop.latex.autoBuild.run: .tex ƒtƒ@ƒCƒ‹‚Ì•Û‘¶Žž‚ÉŽ©“®“I‚Éƒrƒ‹ƒh‚ðs‚¤‚©‚Ç‚¤‚©
-// LaTeX ƒtƒ@ƒCƒ‹‚Í .tex ƒtƒ@ƒCƒ‹‚ð•ÏXŒã‚Éƒrƒ‹ƒh‚µ‚È‚¢‚ÆAPDF ƒtƒ@ƒCƒ‹ã‚É•ÏXŒ‹‰Ê‚ª”½‰f‚³‚ê‚È‚¢‚½‚ßA
-// .tex ƒtƒ@ƒCƒ‹‚Ì•Û‘¶‚Æ“¯Žž‚ÉŽ©“®“I‚Éƒrƒ‹ƒh‚ðŽÀs‚·‚éÝ’è‚ª‚ ‚é‚ªA•¶‘‚ª‘å‚«‚­‚È‚é‚É˜A‚ê‚Äƒrƒ‹ƒh‚É‚à
-// ŽžŠÔ‚ª‚©‚©‚Á‚Ä‚µ‚Ü‚¢Aƒrƒ‹ƒhƒvƒƒOƒ‰ƒ€‚Ì•‰‰×‚ªƒGƒfƒBƒ^‚É‰e‹¿‚·‚é‚½‚ßA–³Œø‰»‚µ‚Ä‚¨‚­B
+// latex-workshop.latex.autoBuild.run: .tex ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¿å­˜æ™‚ã«è‡ªå‹•çš„ã«ãƒ“ãƒ«ãƒ‰ã‚’è¡Œã†ã‹ã©ã†ã‹
+// LaTeX ãƒ•ã‚¡ã‚¤ãƒ«ã¯ .tex ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å¤‰æ›´å¾Œã«ãƒ“ãƒ«ãƒ‰ã—ãªã„ã¨ã€PDF ãƒ•ã‚¡ã‚¤ãƒ«ä¸Šã«å¤‰æ›´çµæžœãŒåæ˜ ã•ã‚Œãªã„ãŸã‚ã€
+// .tex ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¿å­˜ã¨åŒæ™‚ã«è‡ªå‹•çš„ã«ãƒ“ãƒ«ãƒ‰ã‚’å®Ÿè¡Œã™ã‚‹è¨­å®šãŒã‚ã‚‹ãŒã€æ–‡æ›¸ãŒå¤§ãããªã‚‹ã«é€£ã‚Œã¦ãƒ“ãƒ«ãƒ‰ã«ã‚‚
+// æ™‚é–“ãŒã‹ã‹ã£ã¦ã—ã¾ã„ã€ãƒ“ãƒ«ãƒ‰ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®è² è·ãŒã‚¨ãƒ‡ã‚£ã‚¿ã«å½±éŸ¿ã™ã‚‹ãŸã‚ã€ç„¡åŠ¹åŒ–ã—ã¦ãŠãã€‚
 "latex-workshop.latex.autoBuild.run": "never",
 
 "[tex]": {
-    // ƒXƒjƒyƒbƒg•âŠ®’†‚É‚à•âŠ®‚ðŽg‚¦‚é‚æ‚¤‚É‚·‚é
+    // ã‚¹ãƒ‹ãƒšãƒƒãƒˆè£œå®Œä¸­ã«ã‚‚è£œå®Œã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    // ƒCƒ“ƒfƒ“ƒg•‚ð2‚É‚·‚é
+    // ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆå¹…ã‚’2ã«ã™ã‚‹
     "editor.tabSize": 2
 },
 
 "[latex]": {
-    // ƒXƒjƒyƒbƒg•âŠ®’†‚É‚à•âŠ®‚ðŽg‚¦‚é‚æ‚¤‚É‚·‚é
+    // ã‚¹ãƒ‹ãƒšãƒƒãƒˆè£œå®Œä¸­ã«ã‚‚è£œå®Œã‚’ä½¿ãˆã‚‹ã‚ˆã†ã«ã™ã‚‹
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    // ƒCƒ“ƒfƒ“ƒg•‚ð2‚É‚·‚é
+    // ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆå¹…ã‚’2ã«ã™ã‚‹
     "editor.tabSize": 2
 },
 
 "[bibtex]": {
-    // ƒCƒ“ƒfƒ“ƒg•‚ð2‚É‚·‚é
+    // ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆå¹…ã‚’2ã«ã™ã‚‹
     "editor.tabSize": 2
 },
 
 
 // ---------- LaTeX Workshop ----------
 
-// Žg—pƒpƒbƒP[ƒW‚ÌƒRƒ}ƒ“ƒh‚âŠÂ‹«‚Ì•âŠ®‚ð—LŒø‚É‚·‚é
+// ä½¿ç”¨ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ã‚³ãƒžãƒ³ãƒ‰ã‚„ç’°å¢ƒã®è£œå®Œã‚’æœ‰åŠ¹ã«ã™ã‚‹
 "latex-workshop.intellisense.package.enabled": true,
 
-// ¶¬ƒtƒ@ƒCƒ‹‚ð "out" ƒfƒBƒŒƒNƒgƒŠ‚É“f‚«o‚·
+// ç”Ÿæˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’ "out" ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã«åãå‡ºã™
 "latex-workshop.latex.outDir": "out",
 "latex-workshop.latex.clean.method": "glob",
 "workbench.colorTheme": "GitHub Dark",
