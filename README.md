@@ -16,4 +16,4 @@ VScodeでLuaLaTeXを使うときの環境構築セット．
 ## for_VScode
 
 VScode用の設定ファイルたち．
-latexmkrcファイルをHOMEディレクトリに置くとき，Windowsの環境変数%HOMEPATH%が未設定であることを確認する．
+latexmkrcファイルをHOMEディレクトリに置くとき，Windowsの環境変数%HOMEPATH%が未設定であることを必ず確認すること．
