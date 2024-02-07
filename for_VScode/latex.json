@@ -6,11 +6,11 @@
 			"\\begin{center}",
 				"\\includegraphics[keepaspectratio=true, scale=0.5]{test.png}",
 			"\\end{center}",
-			"\\caption{ƒJƒ‰[ƒR[ƒh‚Í039393}",
+			"\\caption{ã‚«ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ã¯039393}",
 			"\\label{fig:test.png}",
 			"\\end{figure}\\vspace{2\\zh}",
 		]
-		description: "‰æ‘œ“\‚è•t‚¯"
+		description: "ç”»åƒè²¼ã‚Šä»˜ã‘"
 	},
 
 	"equation": {
@@ -20,7 +20,7 @@
 			"",
 			"\\end{equation}",
 		]
-		description: "ˆês‚Ì®"
+		description: "ä¸€è¡Œã®å¼"
 	},
 
 	"align": {
@@ -30,7 +30,7 @@
 			"",
 			"\\end{align}",
 		]
-		description: "•¡”s‚Ì®"
+		description: "è¤‡æ•°è¡Œã®å¼"
 	},
 
 	"kugiri":{
@@ -38,19 +38,19 @@
 		"body": [
 			"% ----------hoge----------"
 		]
-		description: "‹æØ‚èü"
+		description: "åŒºåˆ‡ã‚Šç·š"
 	},
 
 	"code": {
         "prefix": "@code",
         "body": [
-            "\\lstset{language = {C}} % Œ¾Œê‚ğ‚»‚Ì“s“xw’è",
+            "\\lstset{language = {C}} % è¨€èªã‚’ãã®éƒ½åº¦æŒ‡å®š",
             "\\lstinputlisting[",
-            "  caption = ƒLƒƒƒvƒVƒ‡ƒ“",
+            "  caption = ã‚­ãƒ£ãƒ—ã‚·ãƒ§ãƒ³",
             "  label = program1",
             "]{test.c}",
         ]
-        description: "ƒ\[ƒXƒR[ƒh‚Ì“\‚è•t‚¯"
+        description: "ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®è²¼ã‚Šä»˜ã‘"
     },
 
     "report": {
@@ -62,15 +62,15 @@
             "\\input{title}",
             "",
             "% -------------------------------------",
-            "% ----------ƒvƒŠƒAƒ“ƒuƒ‹‚±‚±‚Ü‚Å----------",
+            "% ----------ãƒ—ãƒªã‚¢ãƒ³ãƒ–ãƒ«ã“ã“ã¾ã§----------",
             "% -------------------------------------",
             "",
-            "% –ÚŸƒy[ƒW‚Åƒy[ƒWƒXƒ^ƒCƒ‹‚ğ–³Œø‰»‚µ‚È‚¢‚½‚ß‚Ìô•¶",
+            "% ç›®æ¬¡ãƒšãƒ¼ã‚¸ã§ãƒšãƒ¼ã‚¸ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ç„¡åŠ¹åŒ–ã—ãªã„ãŸã‚ã®å‘ªæ–‡",
             "\\AtBeginDocument{\\addtocontents{toc}{\\protect\\thispagestyle{myReport}}}",
             "\\begin{document}",
             "",
             "\\pagestyle{myReport}",
-            "\\mathtoolsset{showonlyrefs=true}  % \\eqref{}‚ÅQÆ‚³‚ê‚½”®‚Ì‚İ‚É”Ô†‚ğU‚é",
+            "\\mathtoolsset{showonlyrefs=true}  % \\eqref{}ã§å‚ç…§ã•ã‚ŒãŸæ•°å¼ã®ã¿ã«ç•ªå·ã‚’æŒ¯ã‚‹",
             "\\maketitle",
             "",
             "\\newpage",
@@ -90,13 +90,21 @@
             "}",
             "\\pagestyle{myReport}",
             "",
-            "\\chapter{˜˜_}",
+            "\\chapter{åºè«–}",
             "\\input{chap1}",
             "",
             "% ----------hoge----------",
             "",
             ""
         ],
-        description: "•\†‚ ‚èƒŒƒ|[ƒg‚Ì‚Ğ‚ÈŒ^"
+        description: "è¡¨ç´™ã‚ã‚Šãƒ¬ãƒãƒ¼ãƒˆã®ã²ãªå‹"
     },
+
+	"coffee": {
+        	"prefix": "@coffee",
+        	"body": [
+            	"\\coffeestainA{0.8}{0.8}{-15}{5cm}{1.3cm}"
+        	],
+        	description: "ã‚³ãƒ¼ãƒ’ãƒ¼ã‚«ãƒƒãƒ—ã®ã‚·ãƒŸ"
+    	},
 }
